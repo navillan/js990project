@@ -181,7 +181,7 @@ const handlePhoneChange = (e) => {
                 setNameError("");
                 setEmailError("");
                 setPhoneError("");
-                window.location.reload()}} id="rzv-complete" disabled={!!nameError || !!emailError || !!phoneError || !selectedName || !selectedEmail || !selectedPhone}
+                setTimeout(() => window.location.reload(), 500);}} id="rzv-complete" disabled={!!nameError || !!emailError || !!phoneError || !selectedName || !selectedEmail || !selectedPhone}
                 >Rezervasyonu Tamamla</button>
             </div>
           </div>
@@ -221,7 +221,8 @@ const handlePhoneChange = (e) => {
               setNameError("");
               setEmailError("");
               setPhoneError("");
-              sendRequest();}} 
+              sendRequest();
+              setTimeout(() => window.location.reload(), 500);}} 
               id="bklm-complete" disabled={!!nameError || !!emailError || !!phoneError || !selectedName || !selectedEmail || !selectedPhone}
              >Bekleme Listesine Ekle</button>
           </div>
