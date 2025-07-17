@@ -11,9 +11,9 @@ export const CheckDate = ({ selectedDate }) => {
 };
 
 export const CheckForRezerv = ({ selectedDate, selectedTime, guests }) => {
- const isReserved = guests.some(guest => {
-    return guest.selectedDate === selectedDate && guest.selectedTime === selectedTime;      
-  })
-  return isReserved
+ const isReserved = guests.filter(guest => 
+    guest.selectedDate === selectedDate && guest.selectedTime === selectedTime
+  ).length;
+  return isReserved >= 4;
 };
 
