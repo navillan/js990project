@@ -19,6 +19,7 @@ A full-stack restaurant reservation and guest management application built with 
 ## Features
 - **User Reservation:**
   - Step-by-step reservation form (date, time, guest count, contact info)
+  - Reservation limitations for the availability of tables at same date and time(4)
   - Validation for name, email, and phone
   - Waiting list option if reservation is not available
   - Expanding the target audience with English language support in addition to Turkish
@@ -139,6 +140,7 @@ Bu proje, örnek bir restorantın rezervasyon sayfasını(frontend) ve yapılan 
 ## Özellikler
 - **Kullanıcı Rezervasyonu:**
   - Adım adım rezervasyon formu (gün, saat, misafir sayısı, iletişim bilgileri)
+  - Tek bir tarih ve saat seçildiğinde uygun masa sayısı ile sınırlandırma(4)
   - İletişim bilgilerinin doğrulaması
   - Bekleme listesi seçeneği imkanı(rezervasyon yapılmak istenen tarih ve saat müsait değilse)
   - Türkçenin yanı sıra ingilizce dil desteği ile hedeflenen kitlenin genişletilmesi
